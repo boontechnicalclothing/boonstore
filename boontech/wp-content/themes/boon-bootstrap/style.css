@@ -36,13 +36,27 @@ h3.head{
 	padding:30px 0;
 }
 /**
-*** Header - Slider default
+*** Footer
+**/
+footer{
+	border-top:1px solid #eee;
+}
+.social a{
+	color:#000;
+}
+#footer{
+	padding:50px 0;
+	overflow:hidden;
+}
+
+/**
+*** Homepage Slider default
 **/
 .banner { position: relative; overflow: auto; }
 .banner li { list-style: none; }
 .banner ul li { float: left; }
 /**
-*** Header - Slider overrides
+*** Homepage Slider overrides
 **/
 .banner{
 	min-height:400px;
@@ -123,7 +137,7 @@ h3.head{
 
 
 /**
-*** Footer
+*** Full Sublimation
 **/
 .home-full-sub{
 	background:#ccc;
@@ -133,16 +147,45 @@ h3.head{
 .home-full-sub .full-sub-img img{
 	width:100%;
 }
+
 /**
-*** Footer
+*** Store
 **/
-.social a{
-	color:#000;
+.store-container{
+	background:rgba(0,0,0,0.1);
+	padding:50px 0;
 }
-#footer{
-	padding-bottom:50px;
-	overflow:hidden;
+/**
+*** Store - Product
+**/
+.store-container .product .images{
+	text-align:center;
+	background:#fff;
 }
+.store-container .product .price{
+	font-size:18px;
+	color:#900;
+}
+.store-container .product .product_title{
+	margin-top:0;
+}
+.store-container .product .summary{
+	margin-bottom:20px;
+}
+.store-container .product .panel.entry-content{
+	border-radius:0;
+	border:1px solid #ddd;
+	margin-top:-1px;
+}
+.store-container .product .panel h2{
+	margin-top:0;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#ccc;
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+}
+
 /**
 *** Breakpoints
 **/

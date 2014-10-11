@@ -32,7 +32,9 @@ if ( ! empty( $tabs ) ) : ?>
 		<?php foreach ( $tabs as $key => $tab ) : ?>
 
 			<div class="panel entry-content" id="tab-<?php echo $key ?>">
-				<?php call_user_func( $tab['callback'], $key, $tab ) ?>
+				<div class="panel-body">
+					<?php call_user_func( $tab['callback'], $key, $tab ) ?>
+				</div>
 			</div>
 
 		<?php endforeach; ?>
