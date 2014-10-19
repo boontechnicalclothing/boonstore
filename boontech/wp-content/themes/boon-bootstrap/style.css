@@ -155,6 +155,9 @@ footer{
 	background:rgba(0,0,0,0.1);
 	padding:25px 0 50px;
 }
+.store-container .page-title{
+	margin-top:0;
+}
 /**
 *** Store - Product
 **/
@@ -197,10 +200,14 @@ footer{
 form.woocommerce-ordering{
 	position:absolute;
 	right:15px;
-	top:0;
+	margin-top:-30px;
+}
+.products{
+	background:#fff;
+	padding:15px 0;
 }
 .products .product .product-inner{
-	margin-top:15px;
+	margin-bottom:15px;
 }
 .products .product .product-link{
 	padding:15px;
@@ -212,15 +219,20 @@ form.woocommerce-ordering{
 	background:#f2f2f2;
 }
 .products .product .product-title{
-	margin-top:10px;
+	margin:10px 0 0;
 	display:block;
 	overflow:hidden;
-	height:52px;
-	font-size:22px;
+	height:20px;
+	font-size:16px;
 }
 .products .product .product-image{
 	display:block;
 	text-align:center;
+}
+.products .product .product-image img{
+	width:100%;
+	height:auto;
+	max-width:300px;
 }
 .products .product .button{
 	display:none;

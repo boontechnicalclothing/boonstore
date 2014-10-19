@@ -28,7 +28,6 @@ if ( function_exists('register_sidebar') )
 	));
 
 ?>
-
 <?php
 //Woocommerce breadcrumbs
 
@@ -40,7 +39,7 @@ function jk_woocommerce_breadcrumbs() {
             'wrap_after'  => '</ol></nav>',
             'before'      => '<li>',
             'after'       => '</li>',
-            'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
+            'home'        => _x( '', 'breadcrumb', 'woocommerce' ),
         );
 }
 ?>

@@ -28,17 +28,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="row">
-<div class="col-md-12">
-<?php
-	$args = array(
-			'delimiter' => '',
-			'before' => '<li>',
-			'after' => '</li>'
-//			'before' => '<span class="breadcrumb-title">' . __( '', 'woothemes' ) . '</span>'
-	);
-?>
-<ol class="breadcrumb"><?php woocommerce_breadcrumb( $args ); ?></ol>
-</div>
 <div class="col-md-6 left">
 	<?php
 		/**
