@@ -153,11 +153,14 @@ footer{
 **/
 .store-container{
 	background:rgba(0,0,0,0.1);
-	padding:50px 0;
+	padding:25px 0 50px;
 }
 /**
 *** Store - Product
 **/
+.woocommerce-breadcrumb .breadcrumb{
+	margin:0;
+}
 .store-container .product .images{
 	text-align:center;
 	background:#fff;
@@ -184,6 +187,46 @@ footer{
 	color:#ccc;
 	border-bottom:1px solid #ccc;
 	padding-bottom:10px;
+}
+.store-container .variations{
+	margin:20px 0;
+}
+/**
+*** Store - Listings
+**/
+form.woocommerce-ordering{
+	position:absolute;
+	right:15px;
+	top:0;
+}
+.products .product .product-inner{
+	margin-top:15px;
+}
+.products .product .product-link{
+	padding:15px;
+	background:#fff;
+	display:block;
+	text-decoration:none;
+}
+.products .product .product-link:hover{
+	background:#f2f2f2;
+}
+.products .product .product-title{
+	margin-top:10px;
+	display:block;
+	overflow:hidden;
+	height:52px;
+	font-size:22px;
+}
+.products .product .product-image{
+	display:block;
+	text-align:center;
+}
+.products .product .button{
+	display:none;
+}
+.products .product a{
+	color:#000;
 }
 
 /**

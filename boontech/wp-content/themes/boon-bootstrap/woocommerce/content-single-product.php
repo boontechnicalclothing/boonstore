@@ -31,11 +31,13 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 <div class="col-md-12">
 <?php
 	$args = array(
-			'delimiter' => '/',
-			'before' => '<span class="breadcrumb-title">' . __( '', 'woothemes' ) . '</span>'
+			'delimiter' => '',
+			'before' => '<li>',
+			'after' => '</li>'
+//			'before' => '<span class="breadcrumb-title">' . __( '', 'woothemes' ) . '</span>'
 	);
 ?>
-<?php woocommerce_breadcrumb( $args ); ?>
+<ol class="breadcrumb"><?php woocommerce_breadcrumb( $args ); ?></ol>
 </div>
 <div class="col-md-6 left">
 	<?php
@@ -67,7 +69,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		?>
 
 	</div><!-- .summary -->
-
+</div><!-- .col-md-6.right-->
+<div class="col-md-12 full">
 	<?php
 		/**
 		 * woocommerce_after_single_product_summary hook
@@ -80,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	?>
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
-</div><!-- .col-md-6.right-->
+</div><!--/.col-md-12.full-->
 </div><!-- .row-->
 </div><!-- #product-<?php the_ID(); ?> -->
 

@@ -28,3 +28,19 @@ if ( function_exists('register_sidebar') )
 	));
 
 ?>
+
+<?php
+//Woocommerce breadcrumbs
+
+add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
+function jk_woocommerce_breadcrumbs() {
+    return array(
+            'delimiter'   => '',
+            'wrap_before' => '<nav class="woocommerce-breadcrumb" itemprop="breadcrumb"><ol class="breadcrumb">',
+            'wrap_after'  => '</ol></nav>',
+            'before'      => '<li>',
+            'after'       => '</li>',
+            'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
+        );
+}
+?>
