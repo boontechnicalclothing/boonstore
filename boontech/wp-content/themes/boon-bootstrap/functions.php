@@ -11,6 +11,7 @@ function wpbootstrap_scripts_with_jquery()
 	wp_enqueue_script( 'jquery-script', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', array() );
 	wp_enqueue_script( 'unslider-script', get_template_directory_uri() . '/js/unslider.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'fittext-script', get_template_directory_uri() . '/js/jquery.fittext.js', array( 'jquery' ) );
+	wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/parallax.min.js', array( 'jquery' ) );
 	
 	// For either a plugin or a theme, you can then enqueue the script:
 	wp_enqueue_script( 'custom-script' );

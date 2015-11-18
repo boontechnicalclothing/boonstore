@@ -6,8 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Boon Technical Clothing: The Ultimate Choice">
+	<meta name="description" content="Performance clothing and active wear to suit athletes and people who live an active lifestyle. The Ultimate Choice. Sublimation printing, heatpress, tshirt design. Shipping Worldwide"/>
+	<meta name="keywords" content="Boon Technical Clothing, sublimation, Boon USA, Ultimate Disc, Ultimate Frisbee, tshirt, t-shirt, clothing, printing, design, heatpress, worldwide shipping, teamwear, climbing, triathlon, running, sportswear"/>
+	
+	<meta property="og:title" content="Boon Technical Clothing" />
+	<meta property="og:image" content="http://boontechnicalclothing.com/boon/wp-content/themes/boon-bootstrap/ogimage.jpg" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Performance clothing and active wear to suit athletes and people who live an active lifestyle. The Ultimate Choice." />
+	<meta property="og:url" content="http://boontechnicalclothing.com/boon/" />
+	<meta property="og:site_name" content="BoonTechnicalClothing.com" />
+
 	
 	<!-- Le styles -->
 	<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
@@ -23,20 +33,30 @@
 
 <body>
 
-<div id="content">
+<nav class="navbar navbar-default navbar-fixed-top boon-nav">
 	<div class="container">
-		<div class="col-md-12">
-			<div id="header">
-				<div class="pull-right fb-header">
-				<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FBoonTechnicalClothing&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=564178057027174" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
-			</div>
-				<div class="">
-					<a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/boon-header-logo.png" alt="<?php bloginfo('name'); ?>"></a>
-				</div>
-			</div>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/boon-logo.png" alt="<?php bloginfo('name'); ?>"></a>
 		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="custom">Custom</a></li>
+				<li><a href="#shop">Shop <sup class="text-warning text-uppercase">Coming Soon</sup></a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="order" class="btn btn-success">Order</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
 	</div>
-	<!--<ul class="navbar-nav nav">
-		<?php wp_list_pages(array('title_li' => '', 'exclude' => 8)); ?>
-	</ul>-->
+</nav>
 
+<div id="content" class="content">

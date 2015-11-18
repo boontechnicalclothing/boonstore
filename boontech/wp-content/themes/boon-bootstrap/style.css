@@ -15,34 +15,122 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 @import url('http://fonts.googleapis.com/css?family=Michroma');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 html,
 body{
 	height:100%;
+	font-family: 'Lato', serif;
+	font-size:1.1em;
+	line-height:1.75;
 }
 body{
-	background:url(images/background.jpg);
+	background:#fff;
 }
+h1 { font-size:40px; }
+h2 { font-size:35px; }
+h3 { font-size:24px; }
+
+p{
+	margin-bottom:20px;
+}
+
 h1.head,
 h2.head,
 h3.head{
 	font-family: 'Michroma', sans-serif;
 	font-weight:bold;
 }
+
+
+
+/**
+*** Bootstrap overrides
+**/
+.btn{
+	font-size:1.1em;
+}
+.btn-lg{
+	font-size:1.2em;
+}
+.container{
+	padding-right:0;
+	padding-left:0;
+}
+
+
 /**
 *** Header
 **/
 .fb-header{
 	padding:30px 0;
 }
+.navbar{
+	margin-bottom:0;
+}
+.boon-nav{
+	background:#000;
+	border:none;
+	font-family: 'Lato', sans-serif;
+	font-weight:bold;
+	font-size:14px;
+}
+.boon-nav .navbar-header{
+	margin-left:0;
+	margin-right:0;
+}
+.boon-nav .navbar-nav>.active>a,
+.boon-nav .navbar-nav>.active>a:hover,
+.boon-nav .navbar-nav>.active>a:focus{
+	background:#2f2f2f;
+	color:#fff;
+}
+.boon-nav .navbar-collapse, 
+.boon-nav .navbar-form{
+	border-color:#000;
+}
+.boon-nav .navbar-brand{
+	padding-top:0;
+	padding-bottom:0;
+}
+.boon-nav.navbar>.container .navbar-brand, 
+.boon-nav.navbar>.container-fluid .navbar-brand{
+	margin-left:0;
+}
+.boon-nav .navbar-nav>li>a{
+	color:#ccc;
+}
+.boon-nav .navbar-nav>li>a:hover{
+	color:#fff;
+}
+.boon-nav .navbar-nav>li>a.btn{
+	padding:5px 10px;
+	margin:9px 5px;
+	color:#fff;
+}
+
+
+
+/**
+*** Content
+**/
+.content{
+	margin-top:50px;
+}
+
+
 /**
 *** Footer
 **/
-footer{
+.footer{
 	border-top:1px solid #eee;
+	background: rgba(0,0,0,0.5);
+	color:#ccc;
+	font-size:.75em;
 }
-.social a{
-	color:#000;
+.copyright{
+	line-height:1;
+	padding:30px 0;
 }
 #footer{
 	padding:50px 0;
@@ -50,23 +138,184 @@ footer{
 }
 
 /**
-*** Homepage Slider default
+*** Homepage
 **/
-.banner { position: relative; overflow: auto; }
-.banner li { list-style: none; }
-.banner ul li { float: left; }
-/**
-*** Homepage Slider overrides
-**/
-.banner{
-	min-height:400px;
-	position:relative;
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
+
+.jersey-program{
+	background:#000 url(images/custom.jpg) top left no-repeat;
+	padding:20px 0;
+	color:#ccc;
+}
+
+
+.jersey-program .head{
 	color:#fff;
-	background:#000;
-	width:100% !important;
+}
+
+.jersey{
+	width:100%;
+	height:250px;
 	text-align:center;
+	color:#fff;
+	background-size:cover;
+	background-repeat:no-repeat;
+	padding:100px 20px;
+	font-size:18px;
+	position:relative;
+}
+
+.jersey .overlay{
+	background:rgba(0,0,0,0.3);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:0;
+}
+
+.jersey-label{
+	position:relative;
+	z-index:1;
+}
+
+.jersey-subli{
+	background-image:url(images/sublimated.jpg);
+}
+.jersey-reg{
+	background-image:url(images/regular.jpg);
+}
+.jersey-shorts{
+	background-image:url(images/shorts.jpg);
+}
+
+.jersey-showcase{
+	margin:100px 0;
+}
+
+
+/**
+*** Full Sublimation
+**/
+.size-chart-img{
+	max-width:100%;
+	height:auto;
+}
+
+.home-full-sub{
+	background:#ccc;
+	padding:40px 0;
 	margin-bottom:30px;
 }
+.home-full-sub .full-sub-img img{
+	width:100%;
+}
+
+
+
+/**
+*** AUDL
+**/
+
+.boon-audl{
+	margin:80px 0;
+}
+
+.boon-audl .banner{
+	margin-bottom:0;
+	min-height:300px;
+}
+
+.boon-audl .text-content{
+	background-color:#000;
+	color:#fff;
+	padding:50px 0;
+}
+
+.boon-audl .parallax-window{
+	position:relative;
+	z-index:1	
+}
+
+.audl-division{
+	height:210px;
+	background-size:contain;
+	background-position: center center;
+	background-color:#fff;
+	margin-top:30px;
+	padding:90px 0;
+}
+
+.audl-division .head{
+	position:relative;
+	z-index:1;
+	margin:0;
+}
+
+.audl-division.west{
+	background-image:url(http://boontechnicalclothing.com/boon/wp-content/uploads/2014/10/west.jpg);
+}
+.audl-division.east{
+	background-image:url(http://boontechnicalclothing.com/boon/wp-content/uploads/2014/10/east.jpg);
+}
+.audl-division.midwest{
+	background-image:url(http://boontechnicalclothing.com/boon/wp-content/uploads/2014/10/midwest.jpg);
+}
+.audl-division.south{
+	background-image:url(http://boontechnicalclothing.com/boon/wp-content/uploads/2014/10/south.jpg);
+}
+
+
+
+
+/**
+*** About
+**/
+
+.boon-about .head{
+	padding: 0 0 40px;
+}
+
+
+
+
+/**
+*** Utility - Modifiers
+**/
+.block-it{
+	display:block;
+}
+
+
+
+/**
+*** Utility - Slider default
+**/
+
+.banner { 
+	position: relative; 
+	overflow: auto; 
+}
+
+.banner li { 
+	list-style: none; 
+}
+
+.banner ul li { 
+	float: left; 
+}
+
+.banner{
+	position:relative;
+	color:#fff;
+	width:100% !important;
+	text-align:center;
+}
+
 .banner .overlay{
 	background:rgba(0,0,0,0.3);
 	position:absolute;
@@ -76,11 +325,13 @@ footer{
 	bottom:0;
 	z-index:0;
 }
+
 .banner-content h1{
 	font-family: 'Michroma', sans-serif;
 	font-weight:bold;
 	font-size:50px;
 }
+
 .banner-content{
 	position: absolute;
 	z-index: 1;
@@ -89,14 +340,17 @@ footer{
 	min-height: 200px;
 	display: block;
 }
+
 .banner ul{
 	margin:0;
 	padding:0;
 }
+
 .banner ul li{
 	display:block;
-	min-height:400px;
+	min-height:300px;
 }
+
 .banner ul li.one{
 	background:url(images/jumboon.jpg) no-repeat center center;
 	background-size:cover;
@@ -109,11 +363,17 @@ footer{
 	background:url(images/jumboon3.jpg) no-repeat center center;
 	background-size:cover;
 }
+.banner ul li.four{
+	background:url(images/jumboon4.jpg) no-repeat center center;
+	background-size:cover;
+}
 .banner .dots {
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 20px;
+	margin:0px;
+	padding:0;
 }
 
 .banner .dots li.active {
@@ -136,119 +396,84 @@ footer{
 }
 
 
-/**
-*** Full Sublimation
-**/
-.home-full-sub{
-	background:#ccc;
-	padding:40px 0;
-	margin-bottom:30px;
-}
-.home-full-sub .full-sub-img img{
-	width:100%;
-}
+
 
 /**
-*** Store
+*** Order Page
 **/
-.store-container{
-	background:rgba(0,0,0,0.1);
-	padding:25px 0 50px;
-}
-.store-container .page-title{
-	margin-top:0;
-}
-/**
-*** Store - Product
-**/
-.woocommerce-breadcrumb .breadcrumb{
-	margin:0;
-}
-.store-container .product .images{
-	text-align:center;
-	background:#fff;
-}
-.store-container .product .price{
-	font-size:18px;
-	color:#900;
-}
-.store-container .product .product_title{
-	margin-top:0;
-}
-.store-container .product .summary{
-	margin-bottom:20px;
-}
-.store-container .product .panel.entry-content{
-	border-radius:0;
-	border:1px solid #ddd;
-	margin-top:-1px;
-}
-.store-container .product .panel h2{
-	margin-top:0;
-	font-size:12px;
-	text-transform:uppercase;
-	color:#ccc;
-	border-bottom:1px solid #ccc;
-	padding-bottom:10px;
-}
-.store-container .variations{
+.order-pack--item{
+	background:#eee;
+	height:300px;
+	padding:10px;
 	margin:20px 0;
 }
+.order-faq{
+	background:#eee;
+	padding:50px 0;
+	margin-top:50px;
+}
+.order-faq-question{
+	padding:10px;
+	margin-top:20px;
+}
+
+
+
+
 /**
-*** Store - Listings
+*** Standard on Pages
 **/
-form.woocommerce-ordering{
-	position:absolute;
-	right:15px;
-	margin-top:-30px;
+.page-hero{
+	background:url(images/fullsub.jpg) center center no-repeat;
+	background-size:cover;
+	min-height:150px;
+	margin-bottom:20px;
 }
-.products{
-	background:#fff;
-	padding:15px 0;
+.page-hero .head{
+	margin-top:120px;
+	    padding: 0 5px 7px;
+    background: #fff;
+    display: inline-block;
+
 }
-.products .product .product-inner{
-	margin-bottom:15px;
-}
-.products .product .product-link{
-	padding:15px;
-	background:#fff;
-	display:block;
-	text-decoration:none;
-}
-.products .product .product-link:hover{
-	background:#f2f2f2;
-}
-.products .product .product-title{
-	margin:10px 0 0;
-	display:block;
-	overflow:hidden;
-	height:20px;
-	font-size:16px;
-}
-.products .product .product-image{
-	display:block;
-	text-align:center;
-}
-.products .product .product-image img{
-	width:100%;
-	height:auto;
-	max-width:300px;
-}
-.products .product .button{
-	display:none;
-}
-.products .product a{
-	color:#000;
-}
+
+
+
+
 
 /**
 *** Breakpoints
 **/
+@media (min-width: 768px){
+.container{
+	padding-right:15px;
+	padding-left:15px;
+}
+.navbar-nav.navbar-right:last-child {
+	margin-right:15px;
+}
+.page-hero{
+	margin-bottom:50px;
+	min-height:250px;
+}
+.page-hero .head{
+	margin-top:170px;
+}
+}
 @media screen and (min-width: 992px){
-.banner{
-	min-height:430px;
+.jersey-showcase.banner{
+	min-height:550px;
 }
-.banner ul li{
-	min-height:430px;
+.jersey-showcase.banner ul li{
+	min-height:550px;
 }
+.products .product .product-link{
+	height:265px;
+}
+.products .product .product-image img{
+
+}
+}
+@media screen and (min-width: 1200px){
+	height:215px;
 }
