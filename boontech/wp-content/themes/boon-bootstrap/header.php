@@ -5,7 +5,7 @@
 	<title><?php wp_title('-',1,'right'); ?> <?php bloginfo('name'); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/favicon.ico"/>
 	<meta name="description" content="Boon Technical Clothing: The Ultimate Choice">
 	<meta name="description" content="Performance clothing and active wear to suit athletes and people who live an active lifestyle. The Ultimate Choice. Sublimation printing, heatpress, tshirt design. Shipping Worldwide"/>
 	<meta name="keywords" content="Boon Technical Clothing, sublimation, Boon USA, Ultimate Disc, Ultimate Frisbee, tshirt, t-shirt, clothing, printing, design, heatpress, worldwide shipping, teamwear, climbing, triathlon, running, sportswear"/>
@@ -31,7 +31,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class( $class ); ?>> 
 
 <nav class="navbar navbar-default navbar-fixed-top boon-nav">
 	<div class="container">
@@ -46,14 +46,18 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/">Home</a></li>
-				<li><a href="custom">Custom</a></li>
-				<li><a href="#shop">Shop <sup class="text-warning text-uppercase">Coming Soon</sup></a></li>
-				<li><a href="#blog">Blog</a></li>
-				<li><a href="#about">About</a></li>
+				<?php wp_nav_menu( array(
+					'menu' => 'default nav',
+					'container' => false,
+					'items_wrap' => '%3$s'
+				 )); ?>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="order" class="btn btn-success">Order</a></li>
+				<?php wp_nav_menu( array(
+					'menu' => 'order nav',
+					'container' => false,
+					'items_wrap' => '%3$s'
+				)); ?>
 			</ul>
 		</div><!--/.nav-collapse -->
 	</div>

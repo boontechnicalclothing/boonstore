@@ -43,4 +43,6 @@ function jk_woocommerce_breadcrumbs() {
             'home'        => _x( '', 'breadcrumb', 'woocommerce' ),
         );
 }
+
 ?>
+<?php remove_filter ('the_content', 'wpautop'); ?>

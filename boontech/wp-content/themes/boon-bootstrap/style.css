@@ -117,6 +117,7 @@ a:hover{
 .boon-nav .navbar-nav>li>a:hover{
 	color:#fff;
 	background:#2f2f2f;
+	border-bottom-color:transparent;
 }
 .boon-nav .navbar-nav>li>a.btn{
 	padding:5px 10px;
@@ -160,7 +161,6 @@ a:hover{
 	text-align:center;
 }
 .footer-partner--item{
-	margin-right:20px;
 	margin-bottom:20px;
 	height:75px;
 }
@@ -494,6 +494,9 @@ a:hover{
 .anchor-item{
 	padding-top:15px;
 }
+.anchor-item:hover{
+	border-bottom-color:transparent;
+}
 
 
 
@@ -561,6 +564,7 @@ a:hover{
 	color:#000;
 	overflow:hidden;
 	position:relative;
+	transition: background .5s linear;
 }
 .blog-item .blog-item--permalink{
 	height:250px;
@@ -591,6 +595,20 @@ a:hover{
 }
 
 
+
+
+/**
+*** Custom
+**/
+.custom-print-thumb{
+	min-height:250px;
+	width:100%;
+	background:#000;
+}
+
+
+
+
 /**
 *** Breakpoints
 **/
@@ -611,7 +629,9 @@ h3 { font-size:1.25em; }
 	padding-right:15px;
 	padding-left:15px;
 }
-
+.footer-partner--item{
+	margin-right:20px;
+}
 .navbar-nav.navbar-right:last-child {
 	margin-right:15px;
 }
@@ -634,6 +654,18 @@ h3 { font-size:1.25em; }
 }
 .order-faq--item .head{
 	margin-top:0;
+}
+.custom-print-item{
+	padding-bottom:100px;
+	margin-bottom:100px;
+	border-bottom:1px solid #ccc;
+	overflow:hidden;
+}
+.custom-print-item .head{
+	margin-top:0;
+}
+.custom-print-thumb{
+	min-height:250px;
 }
 }
 @media screen and (min-width: 992px){
