@@ -38,7 +38,8 @@
 						<address>
 							<ul class="list-unstyled">
 								<li><i class="fa fa-home"></i> 133 E Santos St. San Joaquin Pasig City Philippines 1601</li>
-								<li><i class="fa fa-phone"></i> +63917 577 1980</li>
+								<li><i class="fa fa-mobile"></i> +63 916 2802663</li>
+								<li><i class="fa fa-phone"></i> +63 2 9414117</li>
 								<li><i class="fa fa-envelope"></i> info@boontechnicalclothing.com</li>
 							</ul>
 						</address>
