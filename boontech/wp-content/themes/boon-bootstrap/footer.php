@@ -7,10 +7,10 @@
 				<div class="footer-partners">
 					<p class="head">Partners:</p>
 					<ul class="list-inline">
-						<li class="footer-partner--item"><a class="partner text-hide eric" href="www.earlyrecognitioniscritical.org/" target="_blank">Early Recognition Is Critical</a></li>
+						<li class="footer-partner--item"><a class="partner text-hide eric" href="http://www.earlyrecognitioniscritical.org/" target="_blank">Early Recognition Is Critical</a></li>
 						<li class="footer-partner--item"><a class="partner text-hide clubjr" href="http://www.clubjr.com/english.html" target="_blank">Club Jr</a></li>
-						<li class="footer-partner--item"><a class="partner text-hide audl" href="http://www.clubjr.com/english.html" target="_blank">AUDL</a></li>
-						<li class="footer-partner--item"><a class="partner text-hide blacktie" href="http://www.clubjr.com/english.html" target="_blank">Blacktie Project</a></li>
+						<li class="footer-partner--item"><a class="partner text-hide audl" href="http://theaudl.com/" target="_blank">AUDL</a></li>
+						<li class="footer-partner--item"><a class="partner text-hide blacktie" href="http://blacktieproject.com/" target="_blank">Blacktie Project</a></li>
 					</ul>
 				</div>
 			</div>
@@ -37,10 +37,10 @@
 					<div class="footer-address">
 						<address>
 							<ul class="list-unstyled">
-								<li><i class="fa fa-home"></i> 133 E Santos St. San Joaquin Pasig City Philippines 1601</li>
-								<li><i class="fa fa-mobile"></i> +63 916 2802663</li>
-								<li><i class="fa fa-phone"></i> +63 2 9414117</li>
-								<li><i class="fa fa-envelope"></i> info@boontechnicalclothing.com</li>
+								<li><i class="fa fa-fw fa-home"></i> 133 E Santos St. San Joaquin Pasig City Philippines 1601</li>
+								<li><i class="fa fa-fw fa-mobile"></i> +63 916 2802663</li>
+								<li><i class="fa fa-fw fa-phone"></i> +63 2 9414117</li>
+								<li><i class="fa fa-fw fa-envelope"></i> info@boontechnicalclothing.com</li>
 							</ul>
 						</address>
 					</div>

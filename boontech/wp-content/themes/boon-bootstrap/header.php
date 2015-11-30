@@ -10,12 +10,12 @@
 	<meta name="description" content="Performance clothing and active wear to suit athletes and people who live an active lifestyle. The Ultimate Choice. Sublimation printing, heatpress, tshirt design. Shipping Worldwide"/>
 	<meta name="keywords" content="Boon Technical Clothing, sublimation, Boon USA, Ultimate Disc, Ultimate Frisbee, tshirt, t-shirt, clothing, printing, design, heatpress, worldwide shipping, teamwear, climbing, triathlon, running, sportswear"/>
 	
-	<meta property="og:title" content="Boon Technical Clothing" />
+	<meta property="og:title" content="<?php wp_title('-',1,'right'); ?> <?php bloginfo('name'); ?>" />
 	<meta property="og:image" content="http://boontechnicalclothing.com/boon/wp-content/themes/boon-bootstrap/ogimage.jpg" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:description" content="Performance clothing and active wear to suit athletes and people who live an active lifestyle. The Ultimate Choice." />
-	<meta property="og:url" content="http://boontechnicalclothing.com/boon/" />
+	<meta property="og:url" content="<?php the_permalink(); ?>" />
 	<meta property="og:site_name" content="BoonTechnicalClothing.com" />
 
 	

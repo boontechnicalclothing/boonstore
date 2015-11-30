@@ -55,7 +55,7 @@ a:hover{
 *** Bootstrap overrides
 **/
 .btn{
-	font-size:1.1em;
+	font-size:1em;
 }
 .btn-lg{
 	font-size:1.2em;
@@ -64,7 +64,16 @@ a:hover{
 	padding-right:0;
 	padding-left:0;
 }
-
+.well{
+	border:none;
+	background:#eee;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	   		border-radius: 0;
+}
+.text-muted{
+	color:#999;
+}
 
 /**
 *** Header
@@ -603,7 +612,8 @@ a:hover{
 .custom-print-thumb{
 	min-height:250px;
 	width:100%;
-	background:#000;
+	background:url(images/ultimatechoice.jpg) no-repeat center center;
+	background-size:cover;
 }
 
 
