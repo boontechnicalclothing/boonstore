@@ -11,6 +11,7 @@
 						<li class="footer-partner--item"><a class="partner text-hide clubjr" href="http://www.clubjr.com/english.html" target="_blank">Club Jr</a></li>
 						<li class="footer-partner--item"><a class="partner text-hide audl" href="http://theaudl.com/" target="_blank">AUDL</a></li>
 						<li class="footer-partner--item"><a class="partner text-hide blacktie" href="http://blacktieproject.com/" target="_blank">Blacktie Project</a></li>
+						<li class="footer-partner--item"><a class="partner text-hide sportsshacksg" href="http://thesportsshack.com.sg/" target="_blank">The Sports Shack Singapore</a></li>
 					</ul>
 				</div>
 			</div>
