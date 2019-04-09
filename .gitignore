@@ -1,3 +1,2 @@
-boontech/wp-includes/
-boontech/wp-content/uploads/
-boontech/wp-admin/
+boontech/
+.DS_Store
