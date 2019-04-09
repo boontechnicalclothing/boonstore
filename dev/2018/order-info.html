@@ -1,0 +1,133 @@
+<div class="faq">
+	<div class="row">
+		<div class="columns small-12 medium-3">
+			<ul class="menu vertical">
+				<li><a class="" href="#sizing">Sizing</a></li>
+				<li><a class="" href="#pricing">Price list</a></li>
+				<li><a class="" href="#design">Design</a></li>
+				<li><a class="" href="#shipping">Shipping</a></li>
+				<li><a class="" href="#payment">Payment</a></li>
+			</ul>
+		</div>
+		
+		
+		<div class="columns small-12 medium-9">
+			<hr class="hide-for-medium">
+			<div id="sizing" class="section sizing">
+				<h2 class="head">Sizing</h2>
+				<div>Size Chart</div>
+				<p>Click to enlarge <small>(opens in new window)</small></p>
+				<a href="http://boontechnicalclothing.com/boon/wp-content/uploads/2015/09/Boon-sizechart_INCHES-111-e1442210687883.png" target="_blank"><img src="http://boontechnicalclothing.com/boon/wp-content/themes/boon-bootstrap/images/sizechart-151x300.png" alt="sizechart" width="151" height="300" class="aligncenter size-medium wp-image-259" /></a>
+			</div>	
+			<hr>
+			<div id="pricing" class="section pricing">
+				<h2>Price List</h2>
+				<table class="table pricelist-table">
+					<thead>
+						<tr>
+							<th>Description</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Short Sleeve Jersey</td>
+							<td>USD 35</td>
+						</tr>
+						<tr>
+							<td>Long Sleeve Jersey</td>
+							<td>USD 39</td>
+						</tr>
+						<tr>
+							<td>Reversible Tanktop</td>
+							<td>USD 39</td>
+						</tr>
+						<tr>
+							<td>Sleeveless Jersey</td>
+							<td>USD 23</td>
+						</tr>
+						<tr>
+							<td>Tanktop</td>
+							<td>USD 19</td>
+						</tr>
+						<tr>
+							<td>Shorts</td>
+							<td>USD 33</td>
+						</tr>
+						<tr>
+							<td>Shorts (plain, no sublimation)</td>
+							<td>USD 20</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<hr>
+			<div id="design" class="section">
+				<h2>Design</h2>
+
+				<p>We prefer designs to be in .ai (Adobe Illustrator) format. If you have a design needing minor edits (e.g. Logo and number placement, font change) we will gladly do it for free for a limited number of edits. You can let us know in your order email.</p>
+				<p>If you have designs in formats other than .ai (such as .psd or .pdf), you can still send them and we'll let you know if we run into image quality problems. Our team will take a look at your design files and will give you feedback.</p>
+				<div><strong>Design services</strong></div>
+				<p>We also offer jersey design services. For a fee of $110, we will create 3 original case designs for you to choose from.</p>
+			</div>
+			<hr>
+			<div id="shipping" class="section">
+				<h2>Shipping and Delivery</h2>
+	
+				<p>Turnaround time is <strong>4 weeks</strong> but best to inform us when exactly you will need the jerseys.</p>
+			</div>
+			<hr>
+			<div id="payment" class="section">
+				<h2>Payment</h2>
+	
+				<p>We require 40% downpayment to commence production, 60% (plus shipping if order is less than 40 items) upon receiving the delivered items.</p>
+				<p>We charge an additional 5% if payment is made through PayPal (for finance charges).</p>
+				<p>All other fees after shipment (i.e customs tax, value added tax) shall be shouldered by your team.</p>
+			</div>
+			<hr>
+			<p class="">Still have a question that isnt covered here? Reach out to us at info@boontechnicalclothing.com</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="columns small-12"><a href="/" class="button hollow">&larr; Home</a></div>
+	</div>
+</div>
+
+<script>
+	// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
