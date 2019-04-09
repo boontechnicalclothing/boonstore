@@ -3,7 +3,8 @@ boonstore
 
 Boon's Online Store
 
-##Folders
+Folders
+-------
 
 1. **boontech** contains wordpress core files
 2. **css** contains css files for the current custom theme
